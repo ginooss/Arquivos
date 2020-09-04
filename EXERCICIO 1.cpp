@@ -4,25 +4,10 @@
 
 using namespace std;
 
-/*int main(int argc, char** argv)
-{
-
-    int v1[10];
-
-    for (int i=0; i<10; ++i)
-    {
-        v1[i] = i;
-        std::cout << *v1;
-        v1++;
-    }
-
-
-}
-*/
 
 void alimenta_array(int p[])
 {
-    for(int i=0; i<5; ++i)
+    for(int i=0; i<10; ++i)
 	{
 		std:cout << "Digite um valor: ";
 		std::cin >> *p;
@@ -34,7 +19,7 @@ void alimenta_array(int p[])
 
 void mostra_array2(int p[])
 {
-    for(int i=0; i<5; ++i)
+    for(int i=0; i<10; ++i)
 	{
 		std::cout << "Posição " << i << ": " << *p << std::endl;
 		p++;
@@ -49,7 +34,7 @@ int cont;
 int media_aritmetica (int p[])
 {	
 	
-	for (int i=0;i<5;++i)
+	for (int i=0;i<10;++i)
 	{
 		
 		media += *p;
@@ -63,7 +48,7 @@ int media_aritmetica (int p[])
 
 int verifica_array (int p[])
 {
-	for (int i=0;i<5;++i)
+	for (int i=0;i<10;++i)
 	{
 		
 		if (*p > media){
@@ -81,7 +66,7 @@ int verifica_array (int p[])
 int main(int argc, char** argv)
 {   
 	
-    int a[5];
+    int a[10];
 
     alimenta_array(a);
 
